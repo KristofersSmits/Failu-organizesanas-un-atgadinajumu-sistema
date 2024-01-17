@@ -8,7 +8,6 @@ def organize_files():
     # Izveidojiet direktorijas, ja tās vēl neeksistē
     create_directories(source_directory)
     
-    # Iegūstiet visas failu nosaukumu sarakstus šajā direktorijā
     files = os.listdir(source_directory)
 
     for file_name in files:
@@ -25,7 +24,6 @@ def organize_files():
             # Ja direktorija neeksistē, izveidojiet to
             create_directory(destination_directory)
 
-            # Pārvietojiet failu uz jauno direktoriju
             shutil.move(file_path, os.path.join(destination_directory, file_name))
 
 def create_directory(directory):
@@ -33,7 +31,6 @@ def create_directory(directory):
         os.makedirs(directory)
 
 def create_directories(source_directory):
-    # Iegūstiet visus iespējamos failu paplašinājumus, kurus vēlaties organizēt
     extensions = set([os.path.splitext(file)[1].lower() for file in os.listdir(source_directory) if os.path.isfile(os.path.join(source_directory, file))])
 
     for extension in extensions:
