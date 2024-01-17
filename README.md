@@ -23,3 +23,30 @@ Personalizācija: Lietotāji var pielāgot sistēmu savām vajadzībām, iestato
 Automatizācija: Automātiski identificē un organizē failus, kā arī sniedz notikumu atgādinājumus, samazinot lietotāju manuālo darbu.
 
 Šī sistēma ir domāta gan cilvēkiem, kuri vēlas vienkārši kārtot savus failus, gan tiem, kas vēlas palielināt ikdienas efektivitāti, uzlabojot uzdevumu pārvaldību un atgādinājumu iestatīšanu.
+
+Šis ir projekts, kas piedāvā vienkāršu risinājumu failu organizēšanai un atgādinājumu iestatīšanai.
+
+## Izmantotās Bibliotēkas
+
+### 1. `os`
+
+- **Mērķis:** `os` bibliotēka tiek izmantota, lai pārvaldītu failu sistēmu, izveidotu un pārvietotu direktorijas.
+  
+### 2. `shutil`
+
+- **Mērķis:** `shutil` nodrošina papildu funkcionalitāti failu operācijām, piemēram, pārvietošanu.
+  
+### 3. `datetime`
+
+- **Mērķis:** `datetime` ļauj strādāt ar datumiem un laikiem, kas nepieciešams atgādinājumu iestatīšanai.
+
+### 4. `tkinter`
+
+- **Mērķis:** `tkinter` tiek izmantots, lai izveidotu vienkāršu lietotāja saskarni, kas ļauj lietotājam organizēt failus un iestatīt atgādinājumus.
+
+## Instalācija
+
+Lai izpildītu projektu, nepieciešams instalēt šīs Python bibliotēkas. Varat izmantot sekojošo komandu:
+
+```bash
+pip install tk
